@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Roseline Kitchen | Pastries & Catering</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/ROSELOGO.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER / NAVIGATION
+    ========================== -->
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <img src="img/ROSELOGO.png" alt="Roseline Kitchen Logo">         </a>
+
+            <nav class="navbar" id="navbar">
+
+                <a href="index.html" class="active">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+
+                <a href="#" class="order-btn">
+                    Order Now
+                </a>
+
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO SLIDER
+    ========================== -->
+    <main>
+
+        <section class="hero-slider">
+
+            <div class="slide active">
+
+                <img
+                    src="img/jollof landscape.jpg"
+                    alt="Jollof Rice"
+                    class="slide-image"
+                >
+
+                <div class="slide-overlay"></div>
+
+                <div class="slide-content">
+
+                    <p class="hero-small-text">
+                        Welcome to Roseline Kitchen
+                    </p>
+
+                    <h1>
+                        Great Food.<br>
+                        Beautiful Moments.
+                    </h1>
+
+                    <p class="hero-description">
+                        Delicious homemade meals, pastries and catering
+                        prepared with care for every occasion.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="menu.html" class="btn btn-primary">
+                            Explore Our Menu
+                        </a>
+
+                        <a href="contact.html" class="btn btn-outline">
+                            Book Catering
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="slide">
+
+                <img
+                    src="img/okorol.jpg"
+                    alt="Seafood Okro"
+                    class="slide-image"
+                >
+
+                <div class="slide-overlay"></div>
+
+                <div class="slide-content">
+
+                    <p class="hero-small-text">
+                        Freshly Prepared
+                    </p>
+
+                    <h2>
+                        Traditional Taste.<br>
+                        Made With Love.
+                    </h2>
+
+                    <p class="hero-description">
+                        Enjoy comforting Nigerian meals prepared
+                        fresh with rich ingredients and unforgettable flavour.
+                    </p>
+
+                    <a href="menu.html" class="btn btn-primary">
+                        View Menu
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="slide">
+
+                <img
+                    src="img/spagl.jpg"
+                    alt="Jollof Spaghetti"
+                    class="slide-image"
+                >
+
+                <div class="slide-overlay"></div>
+
+                <div class="slide-content">
+
+                    <p class="hero-small-text">
+                        Food Everyone Loves
+                    </p>
+
+                    <h2>
+                        Every Plate<br>
+                        Tells A Story.
+                    </h2>
+
+                    <p class="hero-description">
+                        From everyday favourites to special celebrations,
+                        Roseline Kitchen brings flavour to your table.
+                    </p>
+
+                    <a href="menu.html" class="btn btn-primary">
+                        Discover More
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="slide">
+
+                <img
+                    src="img/chicken friedlandscape.jpg"
+                    alt="Fried Rice and Chicken"
+                    class="slide-image"
+                >
+
+                <div class="slide-overlay"></div>
+
+                <div class="slide-content">
+
+                    <p class="hero-small-text">
+                        Catering For Every Occasion
+                    </p>
+
+                    <h2>
+                        Celebrate With<br>
+                        Delicious Food.
+                    </h2>
+
+                    <p class="hero-description">
+                        Weddings, birthdays, parties and special events
+                        deserve food your guests will remember.
+                    </p>
+
+                    <a href="contact.html" class="btn btn-primary">
+                        Book An Event
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Slider arrows -->
+
+            <button class="slider-arrow prev" id="prevSlide">
+                &#10094;
+            </button>
+
+            <button class="slider-arrow next" id="nextSlide">
+                &#10095;
+            </button>
+
+
+            <!-- Slider dots -->
+
+            <div class="slider-dots">
+
+                <button class="dot active" data-slide="0"></button>
+                <button class="dot" data-slide="1"></button>
+                <button class="dot" data-slide="2"></button>
+                <button class="dot" data-slide="3"></button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ABOUT PREVIEW
+        ========================== -->
+
+        <section class="home-about">
+
+            <div class="container about-grid">
+
+                <div class="about-content">
+
+                    <span class="section-label">
+                        Roseline Kitchen
+                    </span>
+
+                    <h2>
+                        Food Made With Passion
+                    </h2>
+
+                    <p>
+                        At Roseline Kitchen, we create delicious homemade
+                        meals, pastries and beautifully prepared dishes
+                        for everyday enjoyment and special celebrations.
+                    </p>
+
+                    <p>
+                        Whether you need a satisfying meal, fresh pastries
+                        or complete catering for your event, every order
+                        is prepared with care.
+                    </p>
+
+                    <a href="about.html" class="text-link">
+                        Discover Our Story →
+                    </a>
+
+                </div>
+
+
+                <div class="about-image">
+
+                    <img
+                        src="img/jollof landscape.jpg"
+                        alt="Roseline Kitchen Food"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             MENU PREVIEW
+        ========================== -->
+
+        <section class="menu-preview">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">
+                            Our Menu
+                        </span>
+
+                        <h2>
+                            Something Delicious For Everyone
+                        </h2>
+                    </div>
+
+                    <a href="menu.html" class="text-link">
+                        View Full Menu →
+                    </a>
+
+                </div>
+
+
+                <div class="menu-scroll-wrapper">
+
+                    <button class="menu-scroll-btn left" id="menuScrollLeft">
+                        &#10094;
+                    </button>
+
+
+                    <div class="menu-scroll" id="menuScroll">
+
+                        <article class="food-card">
+
+                            <div class="food-image">
+                                <img
+                                    src="img/jollof landscape.jpg"
+                                    alt="Jollof Rice"
+                                >
+                            </div>
+
+                            <div class="food-card-content">
+                                <h3>Jollof Rice</h3>
+
+                                <p>
+                                    Rich and flavourful Nigerian jollof rice.
+                                </p>
+
+                                <a href="menu.html">
+                                    View Dish
+                                </a>
+                            </div>
+
+                        </article>
+
+
+                        <article class="food-card">
+
+                            <div class="food-image">
+                                <img
+                                    src="img/okorol.jpg"
+                                    alt="Seafood Okro"
+                                >
+                            </div>
+
+                            <div class="food-card-content">
+                                <h3>Seafood Okro</h3>
+
+                                <p>
+                                    Fresh seafood cooked in rich traditional okro.
+                                </p>
+
+                                <a href="menu.html">
+                                    View Dish
+                                </a>
+                            </div>
+
+                        </article>
+
+
+                        <article class="food-card">
+
+                            <div class="food-image">
+                                <img
+                                    src="img/spagl.jpg"
+                                    alt="Jollof Spaghetti"
+                                >
+                            </div>
+
+                            <div class="food-card-content">
+                                <h3>Jollof Spaghetti</h3>
+
+                                <p>
+                                    Deliciously seasoned spaghetti with bold flavour.
+                                </p>
+
+                                <a href="menu.html">
+                                    View Dish
+                                </a>
+                            </div>
+
+                        </article>
+
+
+                        <article class="food-card">
+
+                            <div class="food-image">
+                                <img
+                                    src="img/chicken friedlandscape.jpg"
+                                    alt="Fried Rice and Chicken"
+                                >
+                            </div>
+
+                            <div class="food-card-content">
+                                <h3>Fried Rice & Chicken</h3>
+
+                                <p>
+                                    Colourful fried rice served with tasty chicken.
+                                </p>
+
+                                <a href="menu.html">
+                                    View Dish
+                                </a>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <button class="menu-scroll-btn right" id="menuScrollRight">
+                        &#10095;
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CATERING SECTION
+        ========================== -->
+
+        <section class="catering-section">
+
+            <div class="catering-overlay"></div>
+
+            <div class="container catering-content">
+
+                <span class="section-label light">
+                    Events & Catering
+                </span>
+
+                <h2>
+                    Let Roseline Kitchen
+                    Cater Your Next Celebration
+                </h2>
+
+                <p>
+                    From intimate gatherings to birthdays, weddings,
+                    corporate events and large celebrations, we bring
+                    great food to every occasion.
+                </p>
+
+                <a href="contact.html" class="btn btn-light">
+                    Make An Enquiry
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CALL TO ACTION
+        ========================== -->
+
+        <section class="home-cta">
+
+            <div class="container cta-content">
+
+                <div>
+
+                    <span class="section-label">
+                        Hungry Yet?
+                    </span>
+
+                    <h2>
+                        Your Next Delicious Meal Is Waiting.
+                    </h2>
+
+                </div>
+
+                <a href="menu.html" class="btn btn-primary">
+                    Browse Our Menu
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <img
+                    src="img/ROSELOGO.png"
+                    alt="Roseline Kitchen Logo"
+                    class="footer-logo"
+                >
+
+                <p>
+                    Delicious meals, pastries and catering
+                    prepared with love.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Our Services</h4>
+
+                <a href="menu.html">Meals</a>
+                <a href="menu.html">Pastries</a>
+                <a href="contact.html">Event Catering</a>
+                <a href="contact.html">Private Orders</a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h4>Contact</h4>
+
+                <p>Phone: +234 812 391 1260</p>
+                <p>Email: hello@roselinekitchen.com</p>
+                <p>Nigeria</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; <span id="currentYear"></span>
+                Roseline Kitchen. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+    
